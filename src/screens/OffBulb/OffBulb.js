@@ -1,5 +1,6 @@
 import React, { Component } from 'react'; 
 import '../../App.css'; 
+import Button from '@material-ui/core/Button'
 
 class OffBulb extends Component {
 
@@ -16,7 +17,7 @@ class OffBulb extends Component {
     return (
       <div className="App"> 
       <center> 
-        <button  id="off" onClick={this.offBulb.bind(this)}>OFF</button>
+        <Button id="off" variant="fab" color="secondary" onClick={this.offBulb.bind(this)}>OFF</Button>
       </center>
       </div>
     );

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'; 
-import '../../App.css'; 
+import '../../App.css';
+import Button from '@material-ui/core/Button'
 
 class BrokenBulb extends Component {
 
@@ -16,7 +17,7 @@ class BrokenBulb extends Component {
     return (
       <div className="App"> 
   <center> 
-      <button id="broken" onClick={this.brokenBulb.bind(this)}>BREAK</button> 
+      <Button id="broken" variant="contained" color="" onClick={this.brokenBulb.bind(this)}>BREAK</Button> 
   </center>
       </div>
     );
